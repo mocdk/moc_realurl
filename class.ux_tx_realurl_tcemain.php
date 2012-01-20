@@ -82,7 +82,7 @@ class ux_tx_realurl_tcemain extends tx_realurl_tcemain {
 	 */
 	protected function expirePathCacheForAllLanguages($pageIds) {
 		$expirationTime = $this->getExpirationTime();
-		$GLOBALS['TYPO3_DB']->exec_UPDATEquery('tx_realurl_pathcache', sprintf('page_id IN (%s) AND expire = 0', implode(',', $pageIds), array('expire' => $expirationTime)));
+		$GLOBALS['TYPO3_DB']->exec_UPDATEquery('tx_realurl_pathcache', sprintf('page_id IN (%s) AND expire = 0', implode(',', $pageIds)), array('expire' => $expirationTime));
 	}
 
 	/**
