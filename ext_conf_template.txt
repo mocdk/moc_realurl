@@ -1,0 +1,2 @@
+	# cat=basic/10; type=boolean; label=Clear cache recursively:Clear cache(pathcache, tx_realurl_urldecodecache, tx_realurl_urlencodecache) recursively (Fixes caching problems with subapges when moving, renaming & deleting pages)
+clear_cache_recursive = 1
